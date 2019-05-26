@@ -15,7 +15,7 @@ router.get("/list", async (req, res) => {
   }
 });
 
-router.get("/list/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
   let { id } = req.params;
   id = Number(id);
   try {
